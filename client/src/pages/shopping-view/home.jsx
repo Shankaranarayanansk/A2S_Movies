@@ -1,20 +1,11 @@
 import { Button } from "@/components/ui/button";
-import bannerOne from "../../assets/banner-1.webp";
-import bannerTwo from "../../assets/banner-2.webp";
-import bannerThree from "../../assets/banner-3.webp";
 import {
-  Airplay,
   BabyIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   CloudLightning,
-  Heater,
-  Images,
-  Shirt,
   ShirtIcon,
-  ShoppingBasket,
   UmbrellaIcon,
-  WashingMachine,
   WatchIcon,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -39,14 +30,6 @@ const categoriesWithIcon = [
   { id: "footwear", label: "Horror", icon: UmbrellaIcon },
 ];
 
-// const brandsWithIcon = [
-//   { id: "nike", label: "Nike", icon: Shirt },
-//   { id: "adidas", label: "Adidas", icon: WashingMachine },
-//   { id: "puma", label: "Puma", icon: ShoppingBasket },
-//   { id: "levi", label: "Levi's", icon: Airplay },
-//   { id: "zara", label: "Zara", icon: Images },
-//   { id: "h&m", label: "H&M", icon: Heater },
-// ];
 function ShoppingHome() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const { productList, productDetails } = useSelector(
@@ -183,25 +166,6 @@ function ShoppingHome() {
           </div>
         </div>
       </section>
-
-      {/* <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Shop by Brand</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {brandsWithIcon.map((brandItem) => (
-              <Card
-                onClick={() => handleNavigateToListingPage(brandItem, "brand")}
-                className="cursor-pointer hover:shadow-lg transition-shadow"
-              >
-                <CardContent className="flex flex-col items-center justify-center p-6">
-                  <brandItem.icon className="w-12 h-12 mb-4 text-primary" />
-                  <span className="font-bold">{brandItem.label}</span>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       <section className="py-12">
         <div className="container mx-auto px-4">
