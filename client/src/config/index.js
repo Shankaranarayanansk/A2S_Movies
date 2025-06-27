@@ -58,11 +58,11 @@ export const addProductFormElements = [
     name: "category",
     componentType: "select",
     options: [
-      { id: "men", label: "Men" },
-      { id: "women", label: "Women" },
-      { id: "kids", label: "Kids" },
-      { id: "accessories", label: "Accessories" },
-      { id: "footwear", label: "Footwear" },
+      { id: "men", label: "Action" },
+      { id: "women", label: "Love" },
+      { id: "kids", label: "Comedy" },
+      { id: "accessories", label: "History" },
+      { id: "footwear", label: "Horror" },
     ],
   },
   {
@@ -83,7 +83,7 @@ export const addProductFormElements = [
     name: "price",
     componentType: "input",
     type: "number",
-    placeholder: "Enter product price",
+    placeholder: "Enter Movie price",
   },
   {
     label: "Sale Price",
@@ -114,27 +114,27 @@ export const shoppingViewHeaderMenuItems = [
   },
   {
     id: "men",
-    label: "Men",
+    label: "Action",
     path: "/shop/listing",
   },
   {
     id: "women",
-    label: "Women",
+    label: "Love",
     path: "/shop/listing",
   },
   {
     id: "kids",
-    label: "Kids",
+    label: "Comedy",
     path: "/shop/listing",
   },
   {
     id: "footwear",
-    label: "Footwear",
+    label: "History",
     path: "/shop/listing",
   },
   {
     id: "accessories",
-    label: "Accessories",
+    label: "Horror",
     path: "/shop/listing",
   },
   {
@@ -145,11 +145,11 @@ export const shoppingViewHeaderMenuItems = [
 ];
 
 export const categoryOptionsMap = {
-  men: "Men",
-  women: "Women",
-  kids: "Kids",
-  accessories: "Accessories",
-  footwear: "Footwear",
+  men: "Action",
+  women: "Love",
+  kids: "Comedy",
+  accessories: "History",
+  footwear: "Horror",
 };
 
 export const brandOptionsMap = {
@@ -163,11 +163,11 @@ export const brandOptionsMap = {
 
 export const filterOptions = {
   category: [
-    { id: "men", label: "Men" },
-    { id: "women", label: "Women" },
-    { id: "kids", label: "Kids" },
-    { id: "accessories", label: "Accessories" },
-    { id: "footwear", label: "Footwear" },
+    { id: "men", label: "Action" },
+    { id: "women", label: "Love" },
+    { id: "kids", label: "Comedy" },
+    { id: "accessories", label: "History" },
+    { id: "footwear", label: "Horror" },
   ],
   brand: [
     { id: "nike", label: "Nike" },

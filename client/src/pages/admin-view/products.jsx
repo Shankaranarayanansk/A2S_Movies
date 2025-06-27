@@ -133,7 +133,7 @@ function AdminProducts() {
         <SheetContent side="right" className="overflow-auto">
           <SheetHeader>
             <SheetTitle>
-              {currentEditedId !== null ? "Edit Product" : "Add New Product"}
+              {currentEditedId !== null ? "Edit Product" : "Add New Movies"}
             </SheetTitle>
           </SheetHeader>
           <ProductImageUpload
