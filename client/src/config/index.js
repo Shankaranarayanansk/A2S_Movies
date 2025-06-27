@@ -38,7 +38,6 @@ export const loginFormControls = [
     type: "password",
   },
 ];
-
 export const addProductFormElements = [
   {
     label: "Title",
@@ -66,19 +65,6 @@ export const addProductFormElements = [
     ],
   },
   {
-    label: "Brand",
-    name: "brand",
-    componentType: "select",
-    options: [
-      { id: "nike", label: "Nike" },
-      { id: "adidas", label: "Adidas" },
-      { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
-      { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
-    ],
-  },
-  {
     label: "Price",
     name: "price",
     componentType: "input",
@@ -92,14 +78,8 @@ export const addProductFormElements = [
     type: "number",
     placeholder: "Enter sale price (optional)",
   },
-  {
-    label: "Total Stock",
-    name: "totalStock",
-    componentType: "input",
-    type: "number",
-    placeholder: "Enter total stock",
-  },
 ];
+
 
 export const shoppingViewHeaderMenuItems = [
   {
@@ -152,14 +132,14 @@ export const categoryOptionsMap = {
   footwear: "Horror",
 };
 
-export const brandOptionsMap = {
-  nike: "Nike",
-  adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
-  zara: "Zara",
-  "h&m": "H&M",
-};
+// export const brandOptionsMap = {
+//   nike: "Nike",
+//   adidas: "Adidas",
+//   puma: "Puma",
+//   levi: "Levi",
+//   zara: "Zara",
+//   "h&m": "H&M",
+// };
 
 export const filterOptions = {
   category: [

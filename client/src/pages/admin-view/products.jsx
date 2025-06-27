@@ -24,10 +24,8 @@ const initialFormData = {
   title: "",
   description: "",
   category: "",
-  brand: "",
   price: "",
   salePrice: "",
-  totalStock: "",
   averageReview: 0,
 };
 
@@ -90,17 +88,21 @@ function AdminProducts() {
   }
 
   function isFormValid() {
-    return Object.keys(formData)
-      .filter((currentKey) => currentKey !== "averageReview")
-      .map((key) => formData[key] !== "")
-      .every((item) => item);
+    const requiredFields = { ...formData };
+    delete requiredFields.averageReview;
+  
+    return (
+      uploadedImageUrl.trim() !== "" &&
+      Object.values(requiredFields).every((value) => value !== "")
+    );
   }
-
+  
   useEffect(() => {
     dispatch(fetchAllProducts());
   }, [dispatch]);
-
+  
   console.log(formData, "productList");
+  
 
   return (
     <Fragment>
