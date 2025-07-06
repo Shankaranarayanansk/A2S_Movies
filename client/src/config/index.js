@@ -89,7 +89,7 @@ export const shoppingViewHeaderMenuItems = [
   },
   {
     id: "products",
-    label: "Products",
+    label: "Movies",
     path: "/shop/listing",
   },
   {
@@ -109,12 +109,12 @@ export const shoppingViewHeaderMenuItems = [
   },
   {
     id: "footwear",
-    label: "History",
+    label: "Horror",
     path: "/shop/listing",
   },
   {
     id: "accessories",
-    label: "Horror",
+    label: "History",
     path: "/shop/listing",
   },
   {

@@ -17,7 +17,7 @@ const adminSidebarMenuItems = [
   },
   {
     id: "products",
-    label: "Products",
+    label: "Movies",
     path: "/admin/products",
     icon: <ShoppingBasket />,
   },
